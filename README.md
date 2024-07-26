@@ -19,7 +19,7 @@ Here's a concise yet comprehensive README file for your Sudoku Solver WebApp:
 A web application built with React.js to input, validate, and solve 9x9 Sudoku puzzles. This app allows users to input initial Sudoku values, validate the entries, and solve the puzzle using a backtracking algorithm.
 
 # Features
-Input Grid: A 9x9 grid for users to input initial Sudoku values (1-9) or leave cells blank.
+Input Grid: A 9x9 grid for users to input initial Sudoku values (1-9) or leave cells blank. 
 Validate: A button to validate the current state of inputs.
 Solve: A button to solve the Sudoku puzzle if the entries are valid.
 Error Handling: Displays an error message if the initial entries are invalid.
