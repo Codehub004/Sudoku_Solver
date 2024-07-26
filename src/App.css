@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: teal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: palegoldenrod;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.sudoku-grid {
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  font-size: 20px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sudoku-cell:nth-child(3n) {
+  border-right: 2px solid #333333;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+  border-bottom: 2px solid #333333;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(205, 62, 62);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
