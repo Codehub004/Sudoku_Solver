@@ -11,60 +11,31 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Here's a concise yet comprehensive README file for your Sudoku Solver WebApp:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Sudoku Solver WebApp
+# Overview
+A web application built with React.js to input, validate, and solve 9x9 Sudoku puzzles. This app allows users to input initial Sudoku values, validate the entries, and solve the puzzle using a backtracking algorithm.
 
-### `npm run build`
+# Features
+Input Grid: A 9x9 grid for users to input initial Sudoku values (1-9) or leave cells blank.
+Validate: A button to validate the current state of inputs.
+Solve: A button to solve the Sudoku puzzle if the entries are valid.
+Error Handling: Displays an error message if the initial entries are invalid.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Approach
+Validation Logic
+Rows Validation: Ensures each row contains unique values (excluding empty cells).
+Columns Validation: Ensures each column contains unique values (excluding empty cells).
+3x3 Sub-grids Validation: Ensures each 3x3 sub-grid contains unique values (excluding empty cells).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Solving Algorithm
+The solving algorithm uses a backtracking approach:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Find Empty Cell: Identifies the next empty cell in the grid.
+Valid Placement Check: Checks if placing a number (1-9) in the empty cell adheres to Sudoku rules.
+Recursive Solving: Attempts to solve the puzzle by placing a number and recursively solving the rest of the grid. If a conflict is found, it backtracks and tries the next number.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# License
+This project is licensed under the MIT License.
